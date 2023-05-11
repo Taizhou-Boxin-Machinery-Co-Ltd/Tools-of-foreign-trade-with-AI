@@ -38,9 +38,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.0-M1'
 }
 
-group = 'org.deeplearning4j'
+group = 'cn.boxin'
 version = '1.0.0-SNAPSHOT'
-description = 'Introduction to DL4J'
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 publishing {
