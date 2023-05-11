@@ -7,6 +7,14 @@ repositories {
     mavenLocal()
 }
 
-dependencies {
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
 
+dependencies {
+    //fix unsafe bug
+    implementation "org.deeplearning4j:deeplearning4j-core:$dl4j_version"
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'commons-codec:commons-codec:1.15'
+    implementation 'commons-net:commons-net:3.9.0'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'org.freemarker:freemarker:2.3.32'
 }
