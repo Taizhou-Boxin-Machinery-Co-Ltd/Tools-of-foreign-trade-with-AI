@@ -7,26 +7,23 @@ plugins {
     id 'maven-publish'
 }
 
-repositories {
-    mavenCentral()
-    mavenLocal()
-
-    maven {
-        url = uri('https://oss.sonatype.org/content/repositories/snapshots')
+allprojects {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
+        maven {
+            url "https://https://jitpack.io/"
+        }
     }
-
-    maven {
-        url = uri('https://repo.maven.apache.org/maven2/')
-    }
-
-    maven {
-        url = uri("https://https://jitpack.io/")
-    }
-
 }
 
 dependencies {
-    
+    implementation 'ai.djl:api:0.22.1'
+    implementation 'ai.djl.pytorch:pytorch-engine:0.22.1'
+    //using https://github.com/deepjavalibrary/djl
 }
 
 group = 'cn.boxin'
