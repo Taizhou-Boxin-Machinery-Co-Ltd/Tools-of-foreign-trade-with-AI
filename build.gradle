@@ -2,4 +2,11 @@ plugins {
     id 'java'
 }
 
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+
+}
